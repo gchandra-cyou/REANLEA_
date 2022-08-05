@@ -6,5 +6,5 @@ import itertools as it
 from tkinter import font
 from turtle import bgcolor
 from numpy import array
-
+from animlib.const import*
 ######
