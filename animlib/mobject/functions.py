@@ -3,6 +3,7 @@ from __future__ import annotations
 import numpy as np
 
 from manim import*
+from animlib.utils.config_ops import*
 
 from typing import TYPE_CHECKING
 
