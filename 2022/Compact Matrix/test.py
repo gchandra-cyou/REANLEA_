@@ -10,11 +10,10 @@ from tkinter import font
 from turtle import bgcolor
 from numpy import array
 from color import*
-
 ######
 
-'''
-class RiemannRectanglesAnimation(GraphScene):
+
+'''class RiemannRectanglesAnimation(GraphScene):
     CONFIG = {
         "y_max": 8,
         "y_axis_height": 5,
@@ -58,8 +57,8 @@ class RiemannRectanglesAnimation(GraphScene):
                     riemann_rectangles_list[r],
                     replace_mobject_with_target_in_scene = True,
                 )
-        self.wait()
-'''
+        self.wait()'''
+
 
 class IntegerTableExample(Scene):
     def construct(self):
