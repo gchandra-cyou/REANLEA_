@@ -1,7 +1,6 @@
 import sys
 import copy
 
-sys.path.insert(2,"animlib/")
 
 from manim import *
 config.background_color='#170526'
@@ -10,10 +9,11 @@ import itertools as it
 from tkinter import font
 from turtle import bgcolor
 from numpy import array
-from animlib.const import*
-from animlib.constructs.graph_scene import*
+from color import*
+
 ######
 
+'''
 class RiemannRectanglesAnimation(GraphScene):
     CONFIG = {
         "y_max": 8,
@@ -59,7 +59,7 @@ class RiemannRectanglesAnimation(GraphScene):
                     replace_mobject_with_target_in_scene = True,
                 )
         self.wait()
-
+'''
 
 class IntegerTableExample(Scene):
     def construct(self):
