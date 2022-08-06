@@ -1,5 +1,9 @@
+import sys
+import copy
+
+sys.path.insert(2,"animlib/")
+
 from manim import *
-#from manimlib.imports import*
 config.background_color='#170526'
 from manim_fonts import *
 import itertools as it
@@ -55,3 +59,26 @@ class RiemannRectanglesAnimation(GraphScene):
                     replace_mobject_with_target_in_scene = True,
                 )
         self.wait()
+
+
+class IntegerTableExample(Scene):
+    def construct(self):
+        t0 = IntegerTable(
+            [[0,30,45,60,90],
+            [90,60,45,30,0]],
+            col_labels=[
+                MathTex("\\frac{\sqrt{0}}{2}"),
+                MathTex("\\frac{\sqrt{1}}{2}"),
+                MathTex("\\frac{\sqrt{2}}{2}"),
+                MathTex("\\frac{\sqrt{3}}{2}"),
+                MathTex("\\frac{\sqrt{4}}{2}")],
+            row_labels=[MathTex("\sin"), MathTex("\cos")],
+            h_buff=1,
+            element_to_mobject_config={"unit": "^{\circ}"})
+        t0.set_color_by_gradient(REANLEA_WARM_BLUE,REANLEA_GREEN_LIGHTER,REANLEA_CHARM,REANLEA_WARM_BLUE_DARKER,REANLEA_VIOLET,REANLEA_PURPLE_DARK_FILL)
+        self.play(
+            Create(t0, run_time=5)
+        )
+        self.wait()
+
+

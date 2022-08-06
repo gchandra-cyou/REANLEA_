@@ -15,7 +15,7 @@ from animlib.animation.creation import*
 class GraphScene(Scene):
     CONFIG={
         "x_min":-1,
-        "x_max": 10,
+        'x_max': 10,
         "x_axis_width": 9,
         "x_thick_frequency": 1,
         "_leftmost_tick": None, #Change if different from x_min
