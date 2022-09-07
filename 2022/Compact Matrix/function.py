@@ -7,3 +7,26 @@
                                     # Telegram : https://t.me/reanlea/ 
 
 #####################################################################################################################
+
+import sys
+import copy
+
+from __future__ import annotations
+from cProfile import label
+import fractions
+from imp import create_dynamic
+from multiprocessing import context
+from multiprocessing.dummy import Value
+from numbers import Number
+from tkinter import Y, Label
+from imp import create_dynamic
+from turtle import degrees
+from manim import*
+from math import*
+from color import*
+from manim_fonts import*
+import numpy as np
+import random
+from sklearn.datasets import make_blobs
+
+config.background_color=REANLEA_BLUE
